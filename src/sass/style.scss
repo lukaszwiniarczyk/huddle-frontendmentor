@@ -1,0 +1,98 @@
+@use './colors' as *;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1300px;
+    max-width: 100%;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $violet;
+}
+.header{
+    min-height: 100dvh;
+    color: #fff;
+    width: 100%;
+    .container{
+        .nav{
+            padding: 3rem 2.5rem 0rem;
+            &__logo{
+                img{
+                    width: 50%;
+                    max-width: 165px;
+                }
+            }
+        }
+        background-image: url('../../dist/img/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 52%;
+        &__content{
+            padding: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            &-img{
+                max-width: 500px;
+                width: 100%;
+            }
+            &-text{
+                padding: 6rem 0 2rem;
+                width: 100%;
+                &-heading{
+                    padding: 0 2rem;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 3.5rem;
+                }
+                &-info{
+                    margin: 2.5rem 0 4rem;
+                    line-height: 2.8rem;
+                }
+                &-cta{
+                    padding: 1.3rem 7rem;
+                    border-radius: 30px;
+                    color: $violet;
+                    font-weight: 600;
+                    letter-spacing: 0.2px ;
+                    text-decoration: none;
+                    background-color: #fff;
+                    box-shadow: 0 4px 12px rgb(63, 63, 63);
+                }
+            }
+        }
+        &__socialmedia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            a{
+                margin: 0rem 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-decoration: none;
+                color: #fff;
+                border: 1px solid white;
+                transition: color 0.3s, border 0.3s;
+                &:hover{
+                    color: $softMagenta;
+                    border: 1px solid $softMagenta;
+                }
+            }
+        }
+    }
+}
